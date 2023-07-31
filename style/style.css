@@ -20,14 +20,15 @@
 
 #conteudo-frame {
     position: absolute;
-    width: 150%;
+    width: 155%;
+    max-height: 478px;
 }
 
 .exibir-imagem-pagina {
     width: 67%;
 }
 
-img {
+#celular-conteudo > img {
     display: block;
 }
 
@@ -46,4 +47,36 @@ iframe {
     top: 75%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+#botoes-container {
+    position: relative;
+    width: 55px;
+    height: 450px;
+    float: right;
+    bottom: 500px;
+}
+
+#botoes-container > a > img {
+    width: 100%;
+    border-radius: 50%;
+    padding-top: 15px;
+}
+
+.acessar-rede {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    width: 269px;
+    height: 40px;
+    background: #8B0000;
+}
+
+a:
+
+a:visited {
+    text-decoration: none;
 }
