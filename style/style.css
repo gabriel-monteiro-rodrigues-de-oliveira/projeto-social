@@ -5,6 +5,23 @@
     margin: 0;
 }
 
-body {
-    background-image: url('../imagens/fundo-madeira.jpg')
+#corpo_index {
+    background-image: url('../images/fundo-madeira.jpg');
+}
+
+#container-frame {
+    position: relative;
+}
+
+#conteudo-frame {
+    position: absolute;
+    bottom: 500px;
+}
+
+img {
+    display: block;
+}
+
+iframe {
+    display: block;
 }
