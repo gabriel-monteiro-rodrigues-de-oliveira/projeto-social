@@ -5,17 +5,26 @@
     margin: 0;
 }
 
-#corpo_index {
+#corpo-index {
     background-image: url('../images/fundo-madeira.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #container-frame {
     position: relative;
+    width: 270px;
+    bottom: 550px;
+    left: 20px;
 }
 
 #conteudo-frame {
     position: absolute;
-    bottom: 500px;
+    width: 150%;
+}
+
+.exibir-imagem-pagina {
+    width: 67%;
 }
 
 img {
@@ -24,4 +33,17 @@ img {
 
 iframe {
     display: block;
+}
+
+#celular {
+    position: relative;
+    height: 500px;
+}
+
+#celular-conteudo {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
