@@ -3,34 +3,29 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 #corpo-index {
-    background: #928268 url('../images/fundo-madeira.jpg') no-repeat;
+    background: #928268 url('../images/fundo-madeira.jpg') no-repeat center center fixed;
     background-size: cover;
-    overflow-y: hidden;
 }
 
 #container-frame {
     position: relative;
-    width: 270px;
+    width: 271px;
     bottom: 550px;
     left: 20px;
 }
 
 #conteudo-frame {
+    display: block;
     position: absolute;
     width: 155%;
     max-height: 478px;
 }
 
 .exibir-imagem-pagina {
-    width: 67%;
-    display: block;
-}
-
-iframe {
+    width: 57vh;
     display: block;
 }
 
@@ -41,6 +36,7 @@ iframe {
 
 #celular-conteudo {
     position: absolute;
+    width: auto;
     left: 50%;
     top: 75%;
     transform: translate(-50%, -50%);
@@ -49,28 +45,37 @@ iframe {
 
 #botoes-container {
     position: relative;
-    width: 55px;
-    height: 450px;
-    float: right;
-    bottom: 500px;
+    margin-top: 10px;
 }
 
-#botoes-container > a > img {
-    margin-top: 20px;
+#botoes-conteudo {
+    position: relative;
+    width: 55px;
+    height: 230px;
+    float: right;
+    top: -500px;
+    margin-right: 10px;
+}
+
+#botoes-conteudo > a > img {
     width: 100%;
+    margin-bottom: 20px;
     border-radius: 50%;
 }
 
 .acessar-rede {
     text-transform: uppercase;
     text-align: center;
-    padding-top: 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-    width: 269px;
+    padding-top: 23px;
+    font: normal normal bold 18px Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    width: 270px;
     height: 40px;
     background: #8B0000;
+}
+
+.acessar-rede:hover {
+    background: #FF0000;
 }
 
 a:link {
@@ -81,8 +86,8 @@ a:visited {
     text-decoration: none;
 }
 
-#botoes-container > a > img:hover {
+#botoes-conteudo > a > img:hover {
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgb(235, 250, 137);
+    border: 1px solid #EBFA89;
     transition: 1.5s;
 }
