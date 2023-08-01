@@ -3,12 +3,13 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #corpo-index {
-    background-image: url('../images/fundo-madeira.jpg');
-    background-repeat: no-repeat;
+    background: #928268 url('../images/fundo-madeira.jpg') no-repeat;
     background-size: cover;
+    overflow-y: hidden;
 }
 
 #container-frame {
@@ -26,9 +27,6 @@
 
 .exibir-imagem-pagina {
     width: 67%;
-}
-
-#celular-conteudo > img {
     display: block;
 }
 
@@ -46,7 +44,7 @@ iframe {
     left: 50%;
     top: 75%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    overflow: hidden;
 }
 
 #botoes-container {
@@ -58,9 +56,9 @@ iframe {
 }
 
 #botoes-container > a > img {
+    margin-top: 20px;
     width: 100%;
     border-radius: 50%;
-    padding-top: 15px;
 }
 
 .acessar-rede {
@@ -75,8 +73,16 @@ iframe {
     background: #8B0000;
 }
 
-a:
+a:link {
+    text-decoration: none;
+}
 
 a:visited {
     text-decoration: none;
+}
+
+#botoes-container > a > img:hover {
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(235, 250, 137);
+    transition: 1.5s;
 }
