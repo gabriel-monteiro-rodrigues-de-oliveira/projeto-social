@@ -10,26 +10,7 @@
     background-size: cover;
 }
 
-#container-frame {
-    position: relative;
-    width: 271px;
-    bottom: 550px;
-    left: 20px;
-}
-
-#conteudo-frame {
-    display: block;
-    position: absolute;
-    width: 155%;
-    max-height: 478px;
-}
-
-.exibir-imagem-pagina {
-    width: 57vh;
-    display: block;
-}
-
-#celular {
+#celular-container {
     position: relative;
     height: 500px;
 }
@@ -43,12 +24,26 @@
     overflow: hidden;
 }
 
-#botoes-container {
+#frame-container {
+    position: relative;
+    width: 271px;
+    bottom: 550px;
+    left: 20px;
+}
+
+#frame-conteudo {
+    display: block;
+    position: absolute;
+    width: 155%;
+    max-height: 478px;
+}
+
+#botoes-redes-container {
     position: relative;
     margin-top: 10px;
 }
 
-#botoes-conteudo {
+#botoes-redes-conteudo {
     position: relative;
     width: 55px;
     height: 230px;
@@ -57,24 +52,35 @@
     margin-right: 10px;
 }
 
-#botoes-conteudo > a > img {
+a > img {
     width: 100%;
     margin-bottom: 20px;
     border-radius: 50%;
 }
 
-.acessar-rede {
+a > img:hover {
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid #EBFA89;
+    transition: 1.5s;
+}
+
+.imagem-rede {
+    width: 56vh;
+    display: block;
+}
+
+.botao-acessar-rede {
     text-transform: uppercase;
     text-align: center;
     padding-top: 23px;
     font: normal normal bold 18px Arial, Helvetica, sans-serif;
     color: #FFFFFF;
-    width: 270px;
+    width: 268px;
     height: 40px;
     background: #8B0000;
 }
 
-.acessar-rede:hover {
+.botao-acessar-rede:hover {
     background: #FF0000;
 }
 
@@ -84,10 +90,4 @@ a:link {
 
 a:visited {
     text-decoration: none;
-}
-
-#botoes-conteudo > a > img:hover {
-    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
-    border: 1px solid #EBFA89;
-    transition: 1.5s;
 }
